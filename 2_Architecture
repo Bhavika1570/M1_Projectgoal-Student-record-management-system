@@ -9,3 +9,10 @@ Easy to handle
 Easy data updating  
 Easy record keeping 
 Backup data can be easily generated
+Student record management system in C language is made by using three or more than three header files or many data types such as:
+1. #include<stdio.h> : this header file will contain Scanf() , Printf () And, there are many header files which are used in this program.
+2. #include<conio.h>: this header file will contain Clrscr(); , Getch(); . 
+3.#include<string.h> : this header file will contain string function. 
+4.#include<stdlib.h> : this header defines four variable types, several macros, and various functions for performing general functions.
+5.#include<windows.h>: this header file is used to access the Win32 API functions and it makes it easier for the user to use the in-built functionality. 
+
