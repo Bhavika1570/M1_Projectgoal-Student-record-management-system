@@ -1,1 +1,10 @@
-
+The main aim of the project is to develop software for managing Student records and information.
+This project has been developed to carry out the processes easily and quickly.
+This project is developed in C language.
+This project provides facility to user can:
+Add record 
+View Record 
+Search Record 
+Modify Record
+Delete Record
+Exit Record
