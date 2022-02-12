@@ -22,7 +22,7 @@ struct student
 int main()
 {
     gotoxy(15,8);
-    printf("<--:Student Record Management System:-->");
+    printf("Student Record Management System");
     gotoxy(19,15);
     printf("Press any key to continue.");
     getch();
@@ -34,9 +34,9 @@ void menu()
     int choice;
     system("cls");
     gotoxy(10,3);
-    printf("<--:MENU:-->");
+    printf("MENU");
     gotoxy(10,5);
-    printf("Enter appropriate number to perform following task.");
+    printf("Choice");
     gotoxy(10,7);
     printf("1 : Add Record.");
     gotoxy(10,8);
@@ -100,30 +100,27 @@ void add()
     while(another == 'y')
     {
         gotoxy(10,3);
-        printf("<--:ADD RECORD:-->");
+        printf("ADD RECORD:");
         gotoxy(10,5);
-        printf("Enter details of student.");
+        printf("Enter record of student.");
         gotoxy(10,7);
-        printf("Enter Name : ");
+        printf(" Name : ");
 //        gets(std.name);///???
         gets(std.name);
         gotoxy(10,8);
-        printf("Enter Mobile Number : ");
+        printf("Mobile Number : ");
         gets(std.mobile);
         gotoxy(10,9);
-        printf("Enter Roll No : ");
+        printf(" Roll No : ");
         scanf("%d",&std.rollno);
         fflush(stdin);
         gotoxy(10,10);
-        printf("Enter Course : ");
+        printf(" Course : ");
 //        gets(std.course);///???
         gets(std.course);
         gotoxy(10,11);
-        printf("Enter Branch : ");
+        printf(" Branch : ");
         gets(std.branch);
-//        gotoxy(10,12);
-//        printf("Enter Father's Name : ");
-//        gets(std.fathername);
         fwrite(&std,sizeof(std),1,fp);
         gotoxy(10,15);
         printf("Want to add of another record? Then press 'y' else 'n'.");
@@ -146,7 +143,7 @@ void view()
     struct student std;
     system("cls");
     gotoxy(10,3);
-    printf("<--:VIEW RECORD:-->");
+    printf("VIEW RECORD");
     gotoxy(10,5);
     printf("S.No   Name of Student       Mobile No   Roll No  Course      Branch");
     gotoxy(10,6);
@@ -154,7 +151,7 @@ void view()
     fp = fopen("record.txt","rb+");
     if(fp == NULL){
         gotoxy(10,8);
-        printf("Error opening file.");
+        printf("Error");
         exit(1);
     }
     j=8;
@@ -177,7 +174,7 @@ void search()
     char stname[20];
     system("cls");
     gotoxy(10,3);
-    printf("<--:SEARCH RECORD:-->");
+    printf("SEARCH RECORD");
     gotoxy(10,5);
     printf("Enter name of student : ");
     fflush(stdin);
@@ -185,7 +182,7 @@ void search()
     fp = fopen("record.txt","rb+");
     if(fp == NULL){
         gotoxy(10,6);
-        printf("Error opening file");
+        printf("Error ");
         exit(1);
     }
     while(fread(&std,sizeof(std),1,fp ) == 1){
@@ -215,7 +212,7 @@ void modify()
     struct student std;
     system("cls");
     gotoxy(10,3);
-    printf("<--:MODIFY RECORD:-->");
+    printf("MODIFY RECORD");
     gotoxy(10,5);
     printf("Enter name of student to modify: ");
     fflush(stdin);
@@ -266,7 +263,7 @@ void deleterec()
     struct student std;
     system("cls");
     gotoxy(10,3);
-    printf("<--:DELETE RECORD:-->");
+    printf("DELETE RECORD");
     gotoxy(10,5);
     printf("Enter name of student to delete record : ");
     fflush(stdin);
@@ -280,7 +277,7 @@ void deleterec()
     ft = fopen("temp.txt","wb+");
     if(ft == NULL){
         gotoxy(10,6);
-        printf("Error opening file");
+        printf("Error");
         exit(1);
     }
     while(fread(&std,sizeof(std),1,fp) == 1){
