@@ -9,6 +9,8 @@ Objectives:
 ⦁	The main purpose of the project is to build a student database system to facilitate easy access of student’s records. 
 ⦁	In the Student Record Mnagement System,  system design, source code, programme testing, and added many additional functions  to help the user the most.
 ⦁	In this miniproject user can enter the Student's record and verify that the user has all of the necessary information.
+SWOT ANALYSIS:
+![Swot analysis](https://user-images.githubusercontent.com/98874318/156731689-55e61f17-eb6e-4ab9-a39a-4cca9e6ad1b9.png)
 
 Features:
 This project provides facility to user can:
