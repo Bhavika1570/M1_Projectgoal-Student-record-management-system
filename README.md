@@ -33,3 +33,4 @@ Non- Functional Requirement:
 
 Limitations
 It is not cloud based database Management system, therefore it limits other users from interacting with it. The user is to ensure separate information backup reason that we use Microsoft access to develop the system which cannot support the system to be used on other operating system like Linux and apple.
+![Swot analysis](https://user-images.githubusercontent.com/98874318/156731689-55e61f17-eb6e-4ab9-a39a-4cca9e6ad1b9.png)
